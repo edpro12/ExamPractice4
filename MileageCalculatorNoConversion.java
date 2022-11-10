@@ -3,6 +3,7 @@ name: eduing santos and GOnzalo Rincon
 course: pp2
 Assignment: Exampractice 4
 Desciption: manage MileageCalculatorNoConversion and change it to combobox and make sure values are absolute
+gethub: 
 */
 
 import javafx.application.Application;
@@ -13,7 +14,6 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
-import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
@@ -46,17 +46,12 @@ public class MileageCalculatorNoConversion extends Application {
     private RadioButton rbKPL = new RadioButton(altResult);
     private ComboBox<String> cbo = new ComboBox<>();
     
-
-    private ToggleGroup tgConv = new ToggleGroup();
-    
     private GridPane mainPane = new GridPane();
     
     public void start(Stage primaryStage) {   	
     	// set toggle group for RadioButtons
-    	rbMPG.setToggleGroup(tgConv);
-    	rbKPL.setToggleGroup(tgConv);
-
-        cbo.getItems().addAll("L/100KM","mpg");
+        cbo.setPromptText("select type");
+        cbo.getItems().addAll("L/100KM","Mpg");
         
 
     	
