@@ -3,7 +3,7 @@ name: eduing santos and GOnzalo Rincon
 course: pp2
 Assignment: Exampractice 4
 Desciption: manage MileageCalculatorNoConversion and change it to combobox and make sure values are absolute
-gethub: 
+gethub: https://github.com/edpro12/ExamPractice4
 */
 
 import javafx.application.Application;
@@ -153,13 +153,11 @@ public class MileageCalculatorNoConversion extends Application {
      */
     private void resetForm() {
         // reset all form fields
-    	rbMPG.setSelected(true);
+    	
         tfDistance.setText(defaultEntry);
         tfCapacity.setText(defaultEntry);
         tfResult.setText(defaultCalc);
-        lblCapacity.setText(defaultCapacity);
-    	lblDistance.setText(defaultMileage);
-    	lblResult.setText(defaultResult);
+        
     }
 	
 	
